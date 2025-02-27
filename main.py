@@ -42,3 +42,8 @@ class MainApp:
     def speak(self, text):
         engine.say(text)
         engine.runAndWait()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = MainApp(root)
+    root.mainloop()
