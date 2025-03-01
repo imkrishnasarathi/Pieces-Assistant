@@ -5,7 +5,7 @@ from pieces_os_client.api_client import ApiClient
 from pieces_os_client.api.conversations_api import ConversationsApi
 from pieces_os_client.models.seeded_conversation import SeededConversation
 
-# Initialize the PiecesClient
+api_client = ApiClient.get_default()
 pieces_client = PiecesClient()
 
 chat_id = "8ece170c-2c20-40b4-abc5-4d02d6aba951"
