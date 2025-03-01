@@ -8,6 +8,17 @@ from pieces_os_client.models.seeded_conversation import SeededConversation
 api_client = ApiClient.get_default()
 pieces_client = PiecesClient()
 
+conversations_api = ConversationsApi(api_client)
+seeded_conversation = SeededConversation(
+    type="text",
+    initial_message="You are an AI assistant that helps people with their work and can send emails for them by triggering specific functions."
+)
+conversation = conversations_api.conversations_create_specific_conversation(
+    transferables=True,
+    seeded_conversation=seeded_conversation
+)
+
+print("New conversation created:", conversation)
 chat_id = "8ece170c-2c20-40b4-abc5-4d02d6aba951"
 pieces_client.copilot.chat = BasicChat(chat_id)
 pieces_client.copilot.chat.name = "System: Pieces-Assistant"
