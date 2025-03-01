@@ -1,6 +1,9 @@
 import speech_recognition as sr
 from pieces_os_client.wrapper import PiecesClient
 from pieces_os_client.wrapper.basic_identifier.chat import BasicChat
+from pieces_os_client.api_client import ApiClient
+from pieces_os_client.api.conversations_api import ConversationsApi
+from pieces_os_client.models.seeded_conversation import SeededConversation
 
 # Initialize the PiecesClient
 pieces_client = PiecesClient()
