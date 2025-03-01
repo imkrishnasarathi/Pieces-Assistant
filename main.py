@@ -7,6 +7,7 @@ pieces_client = PiecesClient()
 
 chat_id = "8ece170c-2c20-40b4-abc5-4d02d6aba951"
 pieces_client.copilot.chat = BasicChat(chat_id)
+pieces_client.copilot.chat.name = "System: Pieces-Assistant"
 
 def listen_and_respond():
     # Initialize the recognizer
