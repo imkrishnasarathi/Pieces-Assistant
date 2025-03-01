@@ -5,6 +5,8 @@ from pieces_os_client.wrapper.basic_identifier.chat import BasicChat
 # Initialize the PiecesClient
 pieces_client = PiecesClient()
 
+chat_id = "8ece170c-2c20-40b4-abc5-4d02d6aba951"
+
 def listen_and_respond():
     # Initialize the recognizer
     recognizer = sr.Recognizer()
@@ -33,6 +35,5 @@ def listen_and_respond():
 
 # Call the function
 listen_and_respond()
-
 # Close the client
 pieces_client.close()
