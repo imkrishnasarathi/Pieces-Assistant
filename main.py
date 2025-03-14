@@ -10,7 +10,7 @@ pieces_client = PiecesClient()
 
 conversations_api = ConversationsApi(api_client)
 seeded_conversation = SeededConversation(
-    type="text",
+    type="COPILOT",
     initial_message="You are an AI assistant that helps people with their work and can send emails for them by triggering specific functions."
 )
 conversation = conversations_api.conversations_create_specific_conversation(
