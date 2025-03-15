@@ -7,7 +7,6 @@ from pieces_os_client.models.seeded_conversation import SeededConversation
 
 api_client = ApiClient.get_default()
 pieces_client = PiecesClient()
-
 conversations_api = ConversationsApi(api_client)
 seeded_conversation = SeededConversation(
     type="COPILOT",
