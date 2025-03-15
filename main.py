@@ -6,7 +6,8 @@ from pieces_os_client.api.conversations_api import ConversationsApi
 from pieces_os_client.models.seeded_conversation import SeededConversation
 
 api_client = ApiClient.get_default()
-pieces_client = PiecesClient()
+host_url = "http://127.0.0.1:39300"
+pieces_client = PiecesClient(host=host_url)
 conversations_api = ConversationsApi(api_client)
 seeded_conversation = SeededConversation(
     type="COPILOT",
